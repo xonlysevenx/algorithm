@@ -1,16 +1,16 @@
-function selectionSort(arr){
+function selectionSort(arr) {
 
-    let minIndex,temp
+    let minIndex
     let len = arr.length
-    for(let i=0;i<len-1;i++){
+    for (let i = 0; i < len - 1; i++) {
         minIndex = i
-        for(let j=i+1;j<len;j++){
-            if(arr[j]<arr[minIndex]){
+        for (let j = i + 1; j < len; j++) {
+            if (arr[j] < arr[minIndex]) {
                 minIndex = j
             }
         }
-        if(minIndex !== i){
-            [arr[i],arr[minIndex]] = [arr[minIndex],arr[i]]
+        if (minIndex !== i) {
+            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
         }
 
     }
